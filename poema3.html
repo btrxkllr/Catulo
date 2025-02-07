@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+       <title>Catulo. Poema III</title>
+       <link rel="stylesheet" href="css/estilo.css">
+       <link rel="stylesheet" href="css/fontello.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    </head>
+    
+    <body class="poema3">
+   <header>
+    <div class="container">
+          <h1>El poemario de Catulo</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catulo.html">Biografía</a></li>
+                <li><a href="poemas.html">Traducciones</a></li>
+                
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+ <main>
+      <div class="containerpoema">
+    <section class="poem-sectionpoema">
+        <h1 class="poem-titlepoema">III</h1>
+
+        <div class="poem-textpoema">
+         
+         <p>
+        Lugete, o Veneres Cupidinesque<br>
+et quantum est hominum venustiorum!<br>
+passer mortuus est meae puellae,<br>
+passer, deliciae meae puellae,<br>
+quem plus illa oculis suis amabat;<br>
+nam mellitus erat, suamque norat<br>
+ipsa tam bene quam puella matrem,<br>
+nec sese a gremio illius movebat,<br>
+sed circumsiliens modo huc modo illuc<br>
+ad solam dominam usque pipiabat.<br>
+qui nunc it per iter tenebricosum<br>
+illuc unde negant redire quemquam.<br>
+at vobis male sit, malae tenebrae<br>
+Orci, quae omnia bella devoratis;<br>
+tam bellum mihi passerem abstulistis.<br>
+o factum male! o miselle passer!<br>
+tua nunc opera meae puellae<br>
+flendo turgiduli rubent ocelli.<br>
+
+         </p>
+            
+        </div>
+        
+        <section>
+          
+      <img  class="rosas" src="img/rosasdcha.png" alt="rosas.png" height="350px" style="position:fixed; top:100%; bottom: 0px; right:10vw; transform: translate(50%, -100%);">
+       
+        </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>Política de privacidad</p>
+         <p>Aviso legal</p>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+    document.addEventListener('click', function(event) {
+        const navLinks = document.querySelector('.nav-links');
+        const menuIcon = document.querySelector('.menu-icon');
+
+      
+        if (!navLinks.contains(event.target) && !menuIcon.contains(event.target)) {
+            navLinks.classList.remove('active');
+        }
+    });
+     
+  
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+
+        const bat = document.getElementById('bat');
+      
+
+        // Velocidad de movimiento
+        const batSpeed = 0.2;
+        
+
+        // Aplicar la transformación parallax
+        bat.style.transform = `translateY(${scrollPosition * batSpeed}px)`;
+        ;
+    });
+
+  
+
+</script>
+
+</body>
+</html>

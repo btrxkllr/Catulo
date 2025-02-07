@@ -1,0 +1,935 @@
+
+         *{margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+        }
+         
+
+.fondamento-regular {
+  font-family: "Fondamento", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fondamento-regular-italic {
+  font-family: "Fondamento", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.homemade-apple-regular {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+    
+}
+
+.bona-nova-sc-regular {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bona-nova-sc-bold {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bona-nova-sc-regular-italic {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*declaracion de body de cada página*/
+
+body.index {
+    font-family: "Fondamento";
+     text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(/img/parthenon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: url(/cur/catu.png), auto;
+}
+body.poemas {
+    font-family: "Fondamento";
+     text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(/img/parthenon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: url(/cur/catu.png), auto;
+}
+
+body.catulo {
+    font-family: "Fondamento";
+     text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(/img/pleading-1876.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: url(/cur/catu.png), auto;
+}
+
+body.poema1 {
+    font-family: "Fondamento";
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(/img/a-dedication-to-bacchus-1889.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: url(/cur/catu.png), auto;
+}
+
+body.poema2 {
+     background-color: #262113;
+            background-repeat: repeat-x;
+            vertical-align: center;
+            text-align: center;
+            background-image: url("/img/votive-offering-1873.jpg");
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+
+    font-family: "Fondamento";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   
+  
+    cursor: url(/cur/catu.png), auto;
+}
+
+body.poema3 {
+    font-family: "Fondamento";
+     text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(/img/lrs-alma-tedemalawer-caracalla-geta-1909.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: url(/cur/catu.png), auto;
+}
+
+body.poema4 {
+    font-family: "Fondamento";
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(/img/silver-favourites-1903.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: url(/cur/catu.png), auto;
+}
+
+body.poema5 {
+     background-color: black;
+            background-repeat: no-repeat;
+            vertical-align: center;
+            text-align: center;
+            background-image: url("/img/the-sculpture-gallery-1874.jpg");
+            background-size: cover;
+            background-position: 0% 0%;
+            margin: 0;
+
+    font-family: "Fondamento";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   
+  
+    cursor: url(/cur/catu.png), auto;
+}
+
+body.poema6 {
+     background-color: black;
+            background-repeat: no-repeat;
+            vertical-align: center;
+            text-align: center;
+            background-image: url("/img/phidias-showing-the-frieze-of-the-parthenon-to-his-friends-1868.jpg");
+            background-size: 2150px;
+            background-position: 0% 0%;
+            margin: 0;
+
+    font-family: "Fondamento";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   
+  
+    cursor: url(/cur/catu.png), auto;
+}
+
+/*galeria poemas*/
+
+  .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 100px;
+      margin-bottom: 100px;
+        }
+
+        .gallery-item {
+            margin: 10px;
+            cursor:  url(/cur/catu.png), auto;;
+        }
+
+        .gallery-item img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(51, 51, 51, 0.7) ;
+        }
+
+        .modal-content {
+            display: flex;
+            margin: auto;
+            width: 100%;
+            max-width: 500px;
+            margin-top: 3%;
+        }
+
+        .close {
+            color: #fff;
+            font-size: 80px;
+            font-weight:70;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            cursor: url(/cur/catu.png), auto;
+        }
+
+        .modal-img {
+            width: 100%;
+            height: auto;
+        }
+
+/*galeria de poemas fin*/
+
+
+/*foto catulo biografia*/
+
+ .me {
+                display: flex;
+                float: inherit;
+                width: 200px;
+                height: auto;
+                margin: 0 auto;
+                border-radius: 50px;
+                padding-top: 0px;
+                border: 2px solid black;
+            }  
+            .me:hover{
+                transform: scale(1.1);
+                cursor:  url(/cur/catu.png), auto;
+            }
+
+/*foto catulo biografia fin*/
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20 20px;
+}
+
+.containerpoema {
+    width: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20 20px;
+}
+
+.containerpoema {
+    padding: 50px;
+}
+
+.poem-sectionpoema {
+    padding: 5vh 1vw;
+    text-align: center;
+    background: url('/img/folded-old-paper.jpg');
+    background-size: cover;
+    border-image: url('/img/bg_morristrellis.jpg') 50 / 1vw / 1vw round;
+    border-style: solid;
+    border-width: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.poem-titlepoema {
+    font-size: 3vw;
+    color: black;
+    font-family: 'Fondamento', cursive;
+    margin-bottom: 0px;
+}
+
+.poem-textpoema {
+    padding: 2vw;
+    font-family: "Fondamento", cursive;
+    font-size: 1.5rem;
+    color: black;
+}
+
+  .poem-section {
+    padding: 5vh 1vw;
+    text-align: center;
+    background: url('/img/folded-old-paper.jpg');
+    background-size: cover;
+   
+    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.poem-title {
+    font-size: 45px;
+    color: black;
+    font-family: "Homemade Apple", cursive;
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+
+
+.poem-text {
+    
+    font-family: "Fondamento", cursive;
+    font-size: 20px;
+    color: black;
+    padding: 50px;
+}
+
+header {
+   background-color:rgba(51, 51, 51, 0.5) ;
+    border-bottom: 2px solid #ffff;
+
+    height: 120px;
+        
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+   
+}
+
+.nav-links li {
+    margin-right: 20px;
+    background-color: transparent;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    cursor: url(/cur/catu.png),auto;
+}
+
+.nav-links li a:hover{
+    text-decoration: underline;
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.5); 
+    position: absolute;
+    top: 122px; 
+    left: 0;
+    z-index: 1;
+}
+
+.nav-links.active li {
+    margin: 10px 0;
+}
+.nav-links.active li: hover{
+    text-decoration: underline;
+}
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: url(/cur/catu.png), auto;
+    
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 3px 3px;
+   
+    
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan si no caben en una sola línea */
+    margin-top: 60px; /* Espacio superior */
+}
+
+.image-container img {
+    width: auto; /* Tamaño de las imágenes */
+    height: 400px; /* Altura automática para mantener la proporción */
+    margin: 10px; /* Espacio entre las imágenes */
+    cursor: url(/cur/catu.png), auto;
+    transition: transform 0.3s ease;
+}
+.image-container img:hover {
+    transform: scale(1.1); /* Aumentar tamaño al hacer hover */
+}
+
+.cisnenegro {
+    height: 500px;
+    position: fixed;
+    top: 30%;
+    left: 3vw;
+    z-index: 1;
+}
+
+.cisne4 {
+    height: 500px;
+    position: fixed;
+    top: 30%;
+    right: 1vw;
+    z-index: 1;
+}
+
+ .cruz1{
+        position: fixed;
+        bottom: 0;
+        top: 100%;
+        height: = 20px;
+        right:7vw; 
+        transform: translate(50%, -100%);
+        max-height: 60vh; 
+        
+    }
+
+.gaviota{
+        position: fixed;
+        height: 200px;
+        top:5%; ;
+        left:1vw;
+        max-height: 100vh; 
+    }
+  
+    .barco{
+        position: fixed;
+        bottom: 0;
+        top: 100%;
+        
+        max-height: 80vh; 
+        
+    }
+
+
+
+main {
+    flex: 1;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: rgba(50, 51, 51, 0.5) ;
+    padding: 10px 0;
+    margin-top: auto;
+    border-top: 2px solid #ffff;
+}
+footer .container {
+    text-align: center; /* Centra el contenido dentro del footer */
+}
+
+footer p {
+    margin: 0px 0; /* Añade espacio entre los párrafos */
+    color: white;
+    /* Estilo del subrayado por defecto (transparente) */
+    text-decoration: underline transparent;
+    transition: text-decoration 0.3s ease; /* Transición suave para la animación */
+}
+
+/* Aplica el subrayado al hacer hover sobre los párrafos */
+footer p:hover {
+    text-decoration-color: white; /* Cambia el color del subrayado al hacer hover */
+}
+/* Media Query para tablet */
+
+@media (min-width: 500px) and (max-width: 900px){
+     .cisnenegro {
+        height: auto;
+        max-width: 10%;
+        margin-top: 5px;
+    }
+
+    .cisne4 {
+        height: auto;
+        max-width: 10%;
+        margin-top: 5px;
+    }
+
+
+.cruz1 {
+    height: auto;
+    max-width: 25%;
+    
+    
+}
+ .gaviota {
+    height: auto;
+    max-width: 13%;
+    margin-top: 30px;
+    left: 10px;
+}
+
+.barco {
+    height: auto;
+    width: 200px;
+    
+    
+}
+ .columnas1 {
+    height: auto;
+    max-width: 18%;
+    
+    
+}
+ .columnas2 {
+    height: auto;
+    max-width: 18%;
+    
+    
+}
+
+ 
+    .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20 20px;
+}
+
+.containerpoema {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20 20px;
+}
+
+.containerpoema {
+    padding: 50px;
+}
+
+.poem-sectionpoema {
+    padding: 5vh 1vw;
+    text-align: center;
+    background: url('/img/folded-old-paper.jpg');
+    background-size: cover;
+    border-image: url('/img/bg_morristrellis.jpg') 50 / 1vw / 1vw round;
+    border-style: solid;
+    border-width: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.poem-titlepoema {
+    font-size: 7vw;
+    color: black;
+    font-family: 'Fondamento', cursive;
+    margin-bottom: 0px;
+}
+
+.poem-textpoema {
+    padding: 3vw;
+    font-family: "Fondamento", cursive;
+    font-size: 4vw;
+    color: black;
+    
+}
+
+  .poem-section {
+    padding: 2vh 0.5vw;
+    text-align: center;
+    background: url('/img/folded-old-paper.jpg');
+    background-size: cover;
+   
+    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.poem-title {
+    font-size: 5vw;
+    color: black;
+    font-family: "Homemade Apple", cursive;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+
+.poem-text {
+    
+    font-family: "Fondamento", cursive;
+    font-size: 2vw;
+    color: black;
+    padding: 10px;
+      white-space: pre-line;  /* Mantiene los saltos de línea */
+  word-break: keep-all;   /* Evita que se corten palabras */
+  text-align: center; 
+}
+    
+    .containervideo{
+        position: relative;
+    width: 100%; /* Se ajusta al ancho del contenedor */
+    max-width: 600px; /* Ajusta este valor si es necesario */
+    margin: 0 auto;
+    }
+    
+    .containervideo iframe,
+.containervideo video {
+    width: 100%;
+    height: auto;
+    max-height: 100vh; /* Opcional: evita que sea demasiado alto */
+    display: block;
+}
+      .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(51, 51, 51, 0.7) ;
+        }
+
+        .modal-content {
+            display: flex;
+            margin: auto;
+            width: 100%;
+            max-width: 350px;
+            margin-top: 25%;
+        }
+
+}
+
+@media (max-width: 499px){
+       .cisnenegro {
+        height: auto;
+        max-width: 5%;
+        margin-top: 100px;
+    }
+
+    .cisne4 {
+        height: auto;
+        max-width: 5%;
+        margin-top: 100px;
+    }
+    
+    
+.cruz1 {
+    height: auto;
+    max-width: 15%;
+    
+    
+}
+     .columnas1 {
+    height: auto;
+    max-width: 20%;
+    
+    
+}
+ .columnas2 {
+    height: auto;
+    max-width: 20%;
+    
+    
+}
+    
+    .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20 20px;
+}
+
+.containerpoema {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20 20px;
+}
+
+.containerpoema {
+    padding: 10px;
+}
+
+.poem-sectionpoema {
+    padding: 5vh 1vw;
+    text-align: center;
+    background: url('/img/folded-old-paper.jpg');
+    background-size: cover;
+    border-image: url('/img/bg_morristrellis.jpg') 50 / 1vw / 1vw round;
+    border-style: solid;
+    border-width: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.poem-titlepoema {
+    font-size: 7vw;
+    color: black;
+    font-family: 'Fondamento', cursive;
+    margin-bottom: 0px;
+}
+
+.poem-textpoema {
+    padding: 1vw;
+    font-family: "Fondamento", cursive;
+    font-size: 15px;
+    color: black;
+    
+}
+
+  .poem-section {
+    padding: 2vh 0.5vw;
+    text-align: center;
+    background: url('/img/folded-old-paper.jpg');
+    background-size: cover;
+   
+    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.poem-title {
+    font-size: 15px;
+    color: black;
+    font-family: "Homemade Apple", cursive;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+
+.poem-text {
+    
+    font-family: "Fondamento", cursive;
+    font-size: 10px;
+    color: black;
+    padding: 10px;
+      white-space: pre-line;  /* Mantiene los saltos de línea */
+  word-break: keep-all;   /* Evita que se corten palabras */
+  text-align: center; 
+}
+    
+    .containervideo{
+        position: relative;
+    width: 100%; /* Se ajusta al ancho del contenedor */
+    max-width: 600px; /* Ajusta este valor si es necesario */
+    margin: 0 auto;
+    }
+    
+    .containervideo iframe,
+.containervideo video {
+    width: 100%;
+    height: auto;
+    max-height: 80vh; /* Opcional: evita que sea demasiado alto */
+    display: block;
+}
+    
+}
+    
+@media (max-width: 768px) {
+      header {
+        padding: 0px 0;
+        
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+    
+    .container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.5);
+    border-bottom: 2px solid #ffff;
+    height: 120px;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: none;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: url(/cur/catu.png), auto;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 3px 3px;
+}
+
+
+
+
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: rgba(50, 51, 51, 0.5);
+    padding: 10px 0;
+    margin-top: auto;
+    border-top: 2px solid #ffff;
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    color: white;
+    text-decoration: underline transparent;
+    transition: text-decoration 0.3s ease;
+}
+
+footer p:hover {
+    text-decoration-color: white;
+}
+
+
+
+
+  
+      
+}  
+}
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+       <title>Catulo. Biografía</title>
+       <link rel="stylesheet" href="css/estilo.css">
+       <link rel="stylesheet" href="css/fontello.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    </head>
+
+    <body class="catulo">
+   <header>
+    <div class="container">
+        <h1>El poemario de Catulo</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catulo.html">Biografía</a></li>
+                <li><a href="poemas.html">Traducciones</a></li>
+                
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+  
+   <div class="container">
+    <section class="poem-section">
+        <h1 class="poem-title">Cayo Valerio Catulo</h1>
+
+        <div class="poem-text">
+         
+            <p2>
+               <br>Cayo Valerio Catulo (c. 84 a.C. – c. 54 a.C.) fue un poeta romano nacido en Verona, en el seno de una familia aristocrática. Desde joven se trasladó a Roma, donde se integró en los círculos literarios de la época y adoptó el estilo de los poetas neotéricos, un grupo influenciado por la poesía griega alejandrina. Su obra, caracterizada por la brevedad y la intensidad emocional, rompió con las tradiciones épicas romanas al centrarse en experiencias personales y sentimientos profundos. Aunque no desempeñó un papel político destacado, estuvo en contacto con figuras importantes de la época, como Julio César y Cicerón.<br>
+
+<br>La poesía de Catulo aborda temas diversos, pero es más conocida por sus apasionados poemas de amor y desamor dirigidos a Lesbia, una mujer a quien idealizó y con la que tuvo una relación tormentosa. Se cree que Lesbia era en realidad Clodia, una dama de la aristocracia romana casada con un político influyente. En sus versos, Catulo expresa desde la adoración y el deseo hasta el dolor y la traición, reflejando una relación intensa y conflictiva. Además del amor, también escribió poemas satíricos y burlescos contra personajes de su época, demostrando un ingenio mordaz y una gran habilidad para la ironía y el insulto literario.<br>
+
+<br>A pesar de su muerte prematura, posiblemente a los 30 años, la obra de Catulo ha perdurado y ejercido una gran influencia en la poesía latina posterior, incluyendo a Ovidio y Virgilio. Su estilo fresco y directo, así como su capacidad para plasmar emociones universales, lo han convertido en una figura fundamental en la literatura occidental. Su legado se encuentra en un único manuscrito que recopila sus poemas, transmitido a través de los siglos y redescubierto en la Edad Media, asegurando su lugar como uno de los poetas más importantes de la antigua Roma.<br>
+ 
+            </p2>
+                </div>
+        
+   <section>    
+   <a href="https://es.wikipedia.org/wiki/Catulo" target="_blank">
+                    <img src="img/Catull_Sirmione.jpg" class="me">
+     </a>
+        </section>
+     
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>Política de privacidad</p>
+         <p>Aviso legal</p>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+    document.addEventListener('click', function(event) {
+        const navLinks = document.querySelector('.nav-links');
+        const menuIcon = document.querySelector('.menu-icon');
+
+      
+        if (!navLinks.contains(event.target) && !menuIcon.contains(event.target)) {
+            navLinks.classList.remove('active');
+        }
+    });
+     
+  
+  
+
+</script>
+
+</body>
+</html>

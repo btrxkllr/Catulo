@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Catulo. Poema I</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+   
+</head>
+<body class="poema1">
+<header>
+    <div class="container">
+          <h1>El poemario de Catulo</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catulo.html">Biografía</a></li>
+                <li><a href="poemas.html">Traducciones</a></li>
+                
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="containerpoema">
+        <section class="poem-sectionpoema">
+            <h1 class="poem-titlepoema">I</h1>
+            <div class="poem-textpoema">
+                <p>Cui dono lepidum novum libellum<br>
+arido modo pumice expolitum?<br>
+Corneli, tibi; namque tu solebas<br>
+meas esse aliquid putare nugas,<br>
+iam tum cum ausus es unus Italorum<br>
+omne aevum tribus explicare chartis,<br>
+doctis, Iuppiter, et laboriosis!<br>
+Quare habe tibi quidquid hoc libelli<br>
+qualecumque, quod, o patrona virgo,<br>
+plus uno maneat perenne saeclo.<br></p>
+            </div>
+            <section>
+                <img id="cisnenegro" class="cisnenegro" src="img/column.png" alt="columna1">
+     
+      <img  id="cisne4" class="cisne4" src="img/column.png" alt="columna2" >
+            </section>
+        </section>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <p>Política de privacidad</p>
+        <p>Aviso legal</p>
+    </div>
+</footer>
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+
+    document.addEventListener('click', function(event) {
+        const navLinks = document.querySelector('.nav-links');
+        const menuIcon = document.querySelector('.menu-icon');
+        if (!navLinks.contains(event.target) && !menuIcon.contains(event.target)) {
+            navLinks.classList.remove('active');
+        }
+    });
+    
+  window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+
+        const cisnenegro = document.getElementById('cisnenegro');
+        const cisne4 = document.getElementById('cisne4');
+
+        // Velocidad de movimiento
+        const cisnenegroSpeed = 0.1;
+        const cisne4Speed = 0.1;
+
+        // Aplicar la transformación parallax
+        cisnenegro.style.transform = `translateY(${scrollPosition * cisnenegroSpeed}px)`;
+        cisne4.style.transform = `translateY(${scrollPosition * cisne4Speed}px)`;
+    });
+  
+</script>
+</body>
+</html>
+

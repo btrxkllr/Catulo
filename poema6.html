@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+       <title>Catulo. Poema VI</title>
+       <link rel="stylesheet" href="css/estilo.css">
+       <link rel="stylesheet" href="css/fontello.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    </head>
+    
+    <body class="poema6">
+   <header>
+    <div class="container">
+          <h1>El poemario de Catulo</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catulo.html">Biografía</a></li>
+                <li><a href="poemas.html">Traducciones</a></li>
+                
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+  
+        <div class="containerpoema">
+    <section class="poem-sectionpoema">
+        <h1 class="poem-titlepoema">VI</h1>
+
+        <div class="poem-textpoema">
+         
+         <p>
+       Flavi, delicias tuas Catullo,<br>
+ni sint inlepidae atque inelegantes,<br>
+velles dicere, nec tacere posses.<br>
+verum nescio quid febriculosi<br>
+scorti diligis: hoc pudet fateri.<br>
+nam te non viduas iacere noctes<br>
+nequiquam tacitum cubile clamat<br>
+sertis ac Syrio fragrans olivo,<br>
+pulvinusque peraeque et hic et ille<br>
+attritus, tremulique quassa lecti<br>
+argutatio inambulatioque.<br>
+nam nil stupra valet, nihil, tacere.<br>
+cur? non tam latera ecfututa pandas,<br>
+ni tu quid facias ineptiarum.<br>
+quare, quidquid habes boni malique,<br>
+dic nobis: volo te ac tuos amores<br>
+ad caelum lepido vocare versu.<br>
+
+         </p>
+            
+        </div>
+        
+        <section>
+           
+      <img class="columnas1" src="img/columnas2.png" alt="estatua1.png" height="200px" style="position:fixed; top:100%; bottom: 0px; right:10vw; transform: translate(50%, -100%);">
+      
+       <img class="columnas2" src="img/columnas3.png" alt="rosas.png" height="200px" style="position:fixed; top:100%; bottom: 0px; left:10vw; transform: translate(-50%, -100%);">
+       
+        </section>
+        
+</main>
+
+<footer>
+    <div class="container">
+        <p>Política de privacidad</p>
+         <p>Aviso legal</p>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+    document.addEventListener('click', function(event) {
+        const navLinks = document.querySelector('.nav-links');
+        const menuIcon = document.querySelector('.menu-icon');
+
+      
+        if (!navLinks.contains(event.target) && !menuIcon.contains(event.target)) {
+            navLinks.classList.remove('active');
+        }
+    });
+     
+  
+  
+
+</script>
+
+</body>
+</html>

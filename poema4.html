@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+       <title>Catulo. Poema IV</title>
+       <link rel="stylesheet" href="css/estilo.css">
+       <link rel="stylesheet" href="css/fontello.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    </head>
+    
+    <body class="poema4">
+   <header>
+    <div class="container">
+          <h1>El poemario de Catulo</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catulo.html">Biografía</a></li>
+                <li><a href="poemas.html">Traducciones</a></li>
+                
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="containerpoema">
+    <section class="poem-sectionpoema">
+        <h1 class="poem-titlepoema">IV</h1>
+
+        <div class="poem-textpoema">
+         
+          Phasellus ille, quem videtis, hospites,<br>
+ait fuisse navium celerrimus,<br>
+neque ullius natantis impetum trabis<br>
+nequisse praeterire, sive palmulis<br>
+opus foret volare sive linteo.<br>
+et hoc negat minacis Hadriatici<br>
+negare litus insulasve Cycladas<br>
+Rhodumque nobilem horridamque Thraciam<br>
+Propontida trucemve Ponticum sinum,<br>
+ubi iste post phasellus antea fuit<br>
+comata silva: nam Cytorio in iugo<br>
+loquente saepe sibilum edidit coma.<br>
+
+
+                </div>
+        
+        <section>
+         
+          <img id="gaviota" class="gaviota" src="img/gaviota.png" alt="gaviota.png" >
+          
+      <img class="barco" src="img/barco.png" alt="barco" height="180px" style="position:fixed; top:100%; bottom: 0px; right:5vw; transform: translate(50%, -100%);">
+       
+        </section>
+        
+    
+</main>
+
+<footer>
+    <div class="container">
+        <p>Política de privacidad</p>
+         <p>Aviso legal</p>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+    document.addEventListener('click', function(event) {
+        const navLinks = document.querySelector('.nav-links');
+        const menuIcon = document.querySelector('.menu-icon');
+
+      
+        if (!navLinks.contains(event.target) && !menuIcon.contains(event.target)) {
+            navLinks.classList.remove('active');
+        }
+    });
+     
+   window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+
+        const bat = document.getElementById('gaviota');
+      
+
+        // Velocidad de movimiento
+        const gaviotaSpeed = 0.3;
+        
+
+        // Aplicar la transformación parallax
+        gaviota.style.transform = `translateY(${scrollPosition * gaviotaSpeed}px)`;
+        ;
+    });
+  
+
+</script>
+
+</body>
+</html>
